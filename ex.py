@@ -37,5 +37,9 @@ def main():
         sys.exit(1)
 
 
+def pas():
+    pass
+
+
 if __name__ == '__main__':
     main()
