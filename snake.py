@@ -12,7 +12,12 @@ def main():
     with open(file_name, 'r') as encrypted:
         snake_txt = encrypted.read()
         for i in snake_txt:
-            pass
+            if i.isdigit():
+                i = " "
+        snake_txt = snake_txt.split()
+        for word in snake_txt:
+            for letter in word:
+                pass
 
 
 if __name__ == "__main__":
