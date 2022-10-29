@@ -1,10 +1,6 @@
 import sys
 
 
-def println(x):
-    print(x)
-
-
 def print_words(file_name):
     word_counting = {}
     with open(file_name, 'r', encoding='utf8') as file:
@@ -38,12 +34,6 @@ def main():
     else:
         print('unknown option: ' + option)
         sys.exit(1)
-
-    println("hello")
-
-
-def pas():
-    pass
 
 
 if __name__ == '__main__':
