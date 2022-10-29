@@ -1,6 +1,10 @@
 import sys
 
 
+def println(x):
+    print(x)
+
+
 def print_words(file_name):
     word_counting = {}
     with open(file_name, 'r', encoding='utf8') as file:
@@ -20,7 +24,6 @@ def print_top(file_name):
         print(i)
 
 
-
 def main():
     if len(sys.argv) != 3:
         print('usage: ./wordcount.py {--count | --topcount} file')
@@ -35,6 +38,8 @@ def main():
     else:
         print('unknown option: ' + option)
         sys.exit(1)
+
+    println("hello")
 
 
 def pas():
