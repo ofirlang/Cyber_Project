@@ -15,11 +15,13 @@ def main():
         snake_txt = ''
 
         for i in snake:
+            #print(i + " ", end='')
             if i.isdigit():
                 snake_txt += " "
             else:
                 snake_txt += i
-
+        #BAxIUADYf
+        #print()
         snake_txt = snake_txt.split()
         decoded = ''
 
@@ -30,18 +32,20 @@ def main():
             decoded += " "
 
         decoded = decoded.split()
+        print(decoded)
 
-        for word in decoded:
-            word = word[::-1]
+        for word in range(len(decoded)):
+            decoded[word] = decoded[word][::-1]
+        print(decoded)
 
-        decoded = " ".join(decoded)
+        #decoded = " ".join(decoded)
 
-        if len(sys.argv) < 2:
-            print("file is missing")
-        elif len(sys.argv) > 2:
-            print("remove unused parameter")
-        else:
-            print(decoded)
+        #if len(sys.argv) < 2:
+         #   print("file is missing")
+        #elif len(sys.argv) > 2:
+          #  print("remove unused parameter")
+        #else:
+         #   print(decoded)
 
 
 if __name__ == "__main__":
